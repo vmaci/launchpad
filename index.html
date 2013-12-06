@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="assets/ico/griz_favicon.png">
+  <title>Launchpad 2014-2015 Beta</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  
+  <!-- Bootstrap theme -->
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+  
+  <!-- Custom styles for this template -->
+  <link href="css/launchpad.css" rel="stylesheet">
+  
+  <!-- Web fonts -->
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/media-queries.css" rel="stylesheet">
+  </head>
+  
+  <body>
+  
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+    	<div class="row">
+      	<div class="col-xs-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="index.html"><img src="assets/dash/lp-logo.png" alt="Grizzard Launchpad Logo" width="280" height="17" border="0" /></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Dashboard</a></li>
+              <li><a href="campaigns.html">Campaigns</a></li>
+              <li><a href="griz-u.html">Grizzard U</a></li>
+            </ul>
+          </div>
+          <div id="navbar-user-info">
+            <div class="contact-name"><!--Will grab from variable-->
+              <p>Major Chris Flanagan</p>
+            </div>
+            <div class="acct-name"><!--Will grab from variable-->
+              <p>Houston, TX</p>
+            </div>
+            <div class="shield"><!--Will grab from variable-->
+              <img src="assets/dash/sa-logo.png" alt="Salvation Army Logo" />
+            </div>
+          </div>
+      	</div>
+    	</div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap core JavaScript
+    ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="js/jquery.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/holder.js"></script> 
+  <script>
+		$(document).ready(function(){
+      var d=new Date();   
+      var m=new Array();
+      m[0]="JAN";
+      m[1]="FEB";
+      m[2]="MAR";
+      m[3]="APR";
+      m[4]="MAY";
+      m[5]="JUN";
+      m[6]="JUL";
+      m[7]="AUG";
+      m[8]="SEP";
+      m[9]="OCT";
+      m[10]="NOV";
+      m[11]="DEC";
+      var month = m[d.getMonth()];
+      var date = d.getDate();
+      $('#displayMonth').html(month);
+      $('#displayDate').html(date);
+      
+      /* code to determine greeting (not currently used)
+      
+      var morning = "Good morning, ";
+      var afternoon = "Good afternoon, ";
+      var evening = "Good evening, ";
+      var errortime = "Greetings, ";
+      var time = d.getHours();      
+      if (time < 12) {
+        $('#greeting').html(morning);
+      }
+      else if (time >= 12 && time <= 17) {
+        $('#greeting').html(afternoon);
+      }
+      else if (time > 17 && time <= 24) {
+        $('#greeting').html(evening);
+      }
+      else {
+        $('#greeting').html(errortime);
+      }*/
+      
+			$('.carousel').carousel({
+				interval: 3500
+			  , wrap: false
+			});
+		});
+	</script>
+  </body>
+</html>
