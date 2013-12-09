@@ -1,0 +1,13 @@
+body#campaigns{
+	background-color:#737373;
+}
+.caption p{
+	color:#FFFFFF;
+	text-align:center;
+	padding:10px 0px;
+}
+.thumbnail{
+	border:0px;
+	background-color:transparent;
+	box-shadow:none;
+}

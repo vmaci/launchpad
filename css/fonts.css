@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'davesymbolsregular';
+    src: url('../fonts/davesymbols-webfont.eot');
+    src: url('../fonts/davesymbols-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/davesymbols-webfont.woff') format('woff'),
+         url('../fonts/davesymbols-webfont.ttf') format('truetype'),
+         url('../fonts/davesymbols-webfont.svg#davesymbolsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'arial_lightregular';
+    src: url('../fonts/ariallight-webfont.eot');
+    src: url('../fonts/ariallight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ariallight-webfont.woff') format('woff'),
+         url('../fonts/ariallight-webfont.ttf') format('truetype'),
+         url('../fonts/ariallight-webfont.svg#arial_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'swiss_lite_numeralsregular';
+    src: url('../fonts/swisslitenumerals-webfont.eot');
+    src: url('../fonts/swisslitenumerals-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/swisslitenumerals-webfont.woff') format('woff'),
+         url('../fonts/swisslitenumerals-webfont.ttf') format('truetype'),
+         url('../fonts/swisslitenumerals-webfont.svg#swiss_lite_numeralsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'comenia_sansregular';
+    src: url('../fonts/comeniasans-webfont.eot');
+    src: url('../fonts/comeniasans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comeniasans-webfont.woff') format('woff'),
+         url('../fonts/comeniasans-webfont.ttf') format('truetype'),
+         url('../fonts/comeniasans-webfont.svg#comenia_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'comenia_sansmedium_italic';
+    src: url('../fonts/comeniasansmedium-italic-webfont.eot');
+    src: url('../fonts/comeniasansmedium-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comeniasansmedium-italic-webfont.woff') format('woff'),
+         url('../fonts/comeniasansmedium-italic-webfont.ttf') format('truetype'),
+         url('../fonts/comeniasansmedium-italic-webfont.svg#comenia_sansmedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'comenia_sansmedium';
+    src: url('../fonts/comeniasansmedium-webfont.eot');
+    src: url('../fonts/comeniasansmedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comeniasansmedium-webfont.woff') format('woff'),
+         url('../fonts/comeniasansmedium-webfont.ttf') format('truetype'),
+         url('../fonts/comeniasansmedium-webfont.svg#comenia_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'comenia_sansbold';
+    src: url('../fonts/comeniasans-bold-webfont.eot');
+    src: url('../fonts/comeniasans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comeniasans-bold-webfont.woff') format('woff'),
+         url('../fonts/comeniasans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/comeniasans-bold-webfont.svg#comenia_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'comenia_sansbold_italic';
+    src: url('../fonts/comeniasans-bolditalic-webfont.eot');
+    src: url('../fonts/comeniasans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comeniasans-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/comeniasans-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/comeniasans-bolditalic-webfont.svg#comenia_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'comenia_sansitalic';
+    src: url('../fonts/comeniasans-italic-webfont.eot');
+    src: url('../fonts/comeniasans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comeniasans-italic-webfont.woff') format('woff'),
+         url('../fonts/comeniasans-italic-webfont.ttf') format('truetype'),
+         url('../fonts/comeniasans-italic-webfont.svg#comenia_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'comenia_serif_proregular';
+    src: url('../fonts/comeniaserifpro-webfont.eot');
+    src: url('../fonts/comeniaserifpro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comeniaserifpro-webfont.woff') format('woff'),
+         url('../fonts/comeniaserifpro-webfont.ttf') format('truetype'),
+         url('../fonts/comeniaserifpro-webfont.svg#comenia_serif_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'comenia_serif_probold';
+    src: url('../fonts/comeniaserifpro-bold-webfont.eot');
+    src: url('../fonts/comeniaserifpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/comeniaserifpro-bold-webfont.woff') format('woff'),
+         url('../fonts/comeniaserifpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/comeniaserifpro-bold-webfont.svg#comenia_serif_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

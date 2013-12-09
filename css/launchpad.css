@@ -1,0 +1,658 @@
+/* -------------------START GLOBAL STYLES------------------------- */
+html {
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	padding-bottom: 150px;
+	color: #5a5a5a;
+	min-height: 100%;
+	padding-top: 70px;
+	position: relative;
+	font-family: comenia_sansregular, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	background-color: #dadada;
+}
+/*This gets rid of the blue border around the image map on the campaigns page; delete this later */
+*:focus {
+	outline: none;
+	outline-width: 0;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: comenia_sansmedium, Helvetica, Arial, sans-serif;
+}
+a {
+	color: #ba3b3b; /*bf6767;     #d25757*/
+}
+a:hover {
+	color: #b20000;/*#aa1f1f;  #ba3b3b;   df3232 */
+}
+/* -------------------END GLOBAL STYLES------------------------- */
+
+/* -------------------Start Navigation bar styles------------------- */
+.navbar{
+	border:0px;
+}
+#top-nav{
+	background-color:#F8F8F8;
+}
+#top-nav .nav li a{
+	height:70px;
+	font-size:17px;
+	line-height:60px;
+}
+#top-nav .nav li.active a{
+	font-color:#555555;
+}
+.navbar-fixed-top {
+	height: 75px;
+	border-top:5px solid #E13232;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+	color: #c80000;
+}
+.navbar-brand{
+	padding-left:0px;
+	margin-top:15px;
+}
+.navbar-toggle{
+	margin-right:0px;
+	margin-top:18px;
+}
+.navbar-nav > li > a{
+	font-size:17px;
+	text-shadow:none;
+}
+.nav a .caret{
+	border-top-color:#777777;
+	border-bottom-color:#777777;
+}
+.contact-name, .acct-name {
+	font-size: 13px;
+	letter-spacing: .2em;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	text-align: right;
+	line-height: 2px;
+	margin-right: 39px;
+}
+.contact-name{
+	margin-top:-25px;
+}
+.acct-name{
+	font-size:11px;
+}
+.shield {
+	float: right;
+	margin-top: -40px;
+}
+.navbar-default .navbar-nav .dropdown > a {
+	-webkit-font-smoothing: anti-aliased;
+}
+.navbar-default .navbar-nav .dropdown > a:hover {
+	color: #FFF;
+}
+#secondary-nav{
+	height:67px;
+	background-color:#343434;
+}
+#secondary-nav ul{
+	font-size:17px;
+	color:#777777;
+}
+#secondary-nav li{
+	height:67px;
+	line-height:67px;
+}
+#secondary-nav li a{
+	height:67px;
+	line-height:38px;
+}
+#secondary-nav li a:hover{
+	color:#FFFFFF;
+}
+#secondary-nav .nav > li > a{
+	padding-right:10px;
+	padding-left:10px;
+}
+.nav .dropdown a.dropdown-toggle:hover .caret{
+	border-top-color:#FFFFFF;
+	border-bottom-color:#FFFFFF;
+}
+#campaigns-navbar{
+	background-color:#343434;
+	padding-left:0px;
+	margin-left:-15px;
+}
+/* -------------------End Navigation Bar styles------------------- */
+
+
+
+
+.campaignpage {
+	background-color: #737373;
+	margin-top: 0px;
+}
+.changeview {
+	margin-left: -10px;
+	margin-top: 35px;
+	color: #777;
+}
+
+.black-band {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	height: 505px;
+	width: 100%;
+	background-color: #000;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+	margin-bottom: 0;
+	/* Negative margin to pull up carousel. */
+	margin-top: 5px;
+}
+.carousel-caption {
+	bottom: 4px;
+	right: 43%;
+	left: 9.5%;
+	z-index: 0;
+}
+.carousel-caption h1 {
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-family: comenia_serif_proregular, Helvetica, Arial, sans-serif;
+	font-size: 36px;
+	color: white;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	height: 500px;
+}
+.carousel-inner > .item > img {
+	height: 500px;
+	min-width: 1140px;
+}
+/*
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+*/
+
+
+.carousel-control {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	/*width: 25%;*/
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.carousel-control.left {
+	width: 11%;
+	z-index: 0;
+	background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.0001)));
+	background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 1) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+	background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.0001) 100%);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.0001) 100%);
+	background-repeat: repeat-x;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+	/*right: 0;
+  left: auto;*/
+	width: 50%;
+	z-index: 0;
+	background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 1)));
+	background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 1) 100%));
+	background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 1) 100%);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 1) 100%);
+	background-repeat: repeat-x;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#FF000000', GradientType=1);
+}
+.carousel-control:hover, .carousel-control:focus {
+	opacity: 1;
+	filter: none;
+}
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+	display: none;
+}
+.carousel-indicators {
+	bottom: 0;
+	margin-bottom: 2px;
+	left: 32.5%;
+	opacity: 0.7;
+}
+.carousel-indicators li {
+	width: 8px;
+	height: 8px;
+	margin: 1px;
+	border-radius: 8px;
+}
+.carousel-indicators .active {
+	width: 10px;
+	height: 10px;
+}
+
+.carousel-caption p a {
+	font-size: 24px;
+	font-weight: normal;
+	font-family: comenia_sansregular, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: anti-aliased;
+	color: rgba(255,255,255,0.8);
+}
+.btn-danger {
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#c31c1c), to(#700000)); /*#bb332f*962724*/
+	background-image: -webkit-linear-gradient(top, #c31c1c, 0%, #700000, 100%);
+	background-image: -moz-linear-gradient(top, #c31c1c 0%, #700000 100%);
+	background-image: linear-gradient(to bottom, #c31c1c 0%, #700000 100%);
+	background-repeat: repeat-x;
+	border-color: #922724;
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c31c1c', endColorstr='#ff700000', GradientType=0);
+	opacity: .7;
+}
+.btn-danger:active, .btn-danger.active {
+	background-color: #700000;/*#a12a27;*/
+	border-color: #922724;
+	opacity: .7;
+}
+.red-box {
+	margin-top: -520px;
+	height: 460px;
+	width: 100%;
+	/*margin-right: 0;
+  margin-left: -15px;*/
+	background-color: rgba(150,0,0,0.5);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	z-index: 1;
+}
+.red-band {
+	height: 45px;
+	margin-bottom: 10px;
+	width: auto;
+	background-color: rgba(160,0,0,0.4);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.red-box p {
+	color: #fff;
+	padding-left: 25px;
+	padding-right: 20px;
+	opacity: .6;
+}
+.red-box > p > a {
+	color: rgba(235,85,85,1);/*225,75,75,0.9*/
+}
+.red-box > p > a:hover {
+	color: rgba(235,85,85,1);
+}
+.red-band p {
+	font-size: 20px;
+	color: #fff;
+	opacity: .7;
+	padding-top: 15px;
+}
+.red-box > .contact-info {
+	line-height: 1.2;
+}
+.red-box > .sig {
+	padding-left: 15px;
+	opacity: .7;
+}
+.red-box > .pic {
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.marketing h2 {
+	font-family: comenia_serif_proregular, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	letter-spacing: -.04em;
+	font-size: 36px;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+.marketing .col-lg-4 p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.date-box {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px;
+	margin-bottom: -43px;
+	background-color: #fff;
+	width: 66px;
+	height: 25px;
+	border-radius: 0 0 3px 3px;
+}
+.date-head {
+	letter-spacing: .15em;
+	font-size: 14px;
+	padding-left: 2px;
+}
+.your-dates, .your-documents {
+	padding-bottom: 75px;
+}
+.your-dates > hr {
+	margin-top: 0;
+	margin-bottom: 10px;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #FFF;
+}
+/*.your-dates br {
+  line-height: 1.7;
+}*/
+
+.your-dates.pullup hr {
+	margin-top: 3px;
+}
+.your-dates > h2 > span, .your-documents > h2 > span,  .your-advisor > h2 > span {
+	letter-spacing: -.13em;
+}
+.date-content {
+	position: relative;
+	bottom: 8px;
+	margin-top: 18px;
+	margin-bottom: 3px;
+	line-height: 1.25;
+}
+.date-content-sub {
+	margin-top: 9px;
+}
+.more {
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #ba3b3b;
+}
+.more span {
+	font-size: 10px;
+	font-family: davesymbolsregular; /* Modify this font later so right triangle corresponds to ">" etc */
+}
+#displayMonth {
+	position: relative;
+	text-align: center;
+	color: #FFF;
+	opacity: 1;
+	font-family: arial_lightregular, Helvetica, Arial, sans-serif;
+	letter-spacing: .15em;
+	font-size: 22px;
+	bottom: 124px;
+}
+#displayDate {
+	position: relative;
+	text-align: center;
+	margin-left: 12px;/*0px;   Write JS conditional for this: if date is 2 digits and begins with 1, change the left margin to center it better */
+	color: #767676;
+	font-size: 72px;
+	letter-spacing: 0;
+	font-family: swiss_lite_numeralsregular, Helvetica, Arial, sans-serif;
+	bottom: 147px;
+	margin-bottom: -143px;
+}
+.btn-default {
+	color: #999;
+	letter-spacing: .2em;
+	font-size: 11px;
+}
+.alignleft {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;/*padding-left: 40px;
+  padding-right: 20px;
+  max-width: 650px;*/
+}
+/*  YOUR DOCUMENTS  */
+
+
+.panel {
+	border: 0;
+	-webkit-box-shadow: 0 0;
+	box-shadow: 0 0;
+}
+
+.panel-group .panel {
+	margin-bottom: -7px;
+	overflow: hidden;
+	border-radius: 4px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.panel-heading {
+	margin-top: 0px;
+	margin-bottom: 0;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.panel-heading hr {
+	padding-top: -30px; /*iadded this*/
+	margin-bottom: 15px;/*15*/
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #FFF;
+	z-index: 5;
+}
+.panel-heading.pullup hr {
+	margin-top: 15px;
+}
+.panel-title {
+	padding-top: -20px;/*i added this*/
+	margin-bottom: 0px;/*-10*/
+	font-size: 21px;
+	letter-spacing: .1em;
+	font-family: comenia_sansregular, Helvetica, Arial, sans-serif;
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+.panel-title span {
+	font-size: 15px;
+}
+.panel-title > a {
+	color: #5a5a5a;
+}
+.panel-title > a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.panel-default > .panel-heading {
+	background-color: #e0e0e0;
+}
+.panel-body a span {
+	font-size: 11px;
+	letter-spacing: .1em;
+}
+.panel-body a {
+	color: #c15151;
+}
+.panel-body a:hover {
+	color: #bd1313;
+}
+/*
+.centered {
+  text-align: center;
+  
+}*/
+
+.panel-body {
+	margin-top: -1px;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	line-height: 1.1;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+.panel-body br {
+	line-height: 1.6;
+}
+.panel-body a {
+}
+.donor-head {
+	font-size: 21px;
+	font-family: comenia_sansmedium, Helvetica, Arial, sans-serif;
+	padding-bottom: -5px;
+}
+#eyes {
+	background: url(../assets/dash/eyes.png) no-repeat;
+	height: 96px;
+	width: 368px;
+}
+#eyes:hover {
+	background: url(../assets/dash/eyes-hover.png) no-repeat;
+}
+#hearts {
+	background: url(../assets/dash/hearts.png) no-repeat;
+	height: 96px;
+	width: 368px;
+}
+#hearts:hover {
+	background: url(../assets/dash/hearts-hover.png) no-repeat;
+}
+#learn {
+	background: url(../assets/dash/learn.png) no-repeat;
+	height: 96px;
+	width: 368px;
+}
+#learn:hover {
+	background: url(../assets/dash/learn-hover.png) no-repeat;
+}
+#footer-strip {
+	height: 150px;
+	background-color: #343434;/*#b48d8d;*/
+	padding-top: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#footer-strip p {
+	color: #FFF;
+	opacity: .6;
+	font-size: 12px;
+	text-align: center;
+}
+.filterbar {
+	z-index: -1;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	height: 67px;
+	background-color: #343434;
+	margin-top: -4px;
+}
+.camp-btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	padding-top: 50px;
+	background-color: #737373;
+}
+#all {
+	background: url(../assets/camp/btn-all.png) no-repeat;
+	height: 60px;
+	width: 368px;
+}
+#all:hover {
+	background: url(../assets/camp/btn-all-hover.png) no-repeat;
+}
+#fall {
+	background: url(../assets/camp/btn-fall.png) no-repeat;
+	height: 60px;
+	width: 368px;
+}
+#fall:hover {
+	background: url(../assets/camp/btn-fall-hover.png) no-repeat;
+}
+#digital {
+	background: url(../assets/camp/btn-digital.png) no-repeat;
+	height: 60px;
+	width: 368px;
+}
+#digital:hover {
+	background: url(../assets/camp/btn-digital-hover.png) no-repeat;
+}
+.temp-center img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/*@media (min-width: 992px) {
+	.featurette-heading {
+		margin-top: 120px;
+	}
+}*/
+@media (max-width: 768px) {
+	#navbar-user-info{
+		display:none;
+	}
+	/* Remove the edge padding needed for mobile */
+	/*.marketing {
+		padding-left: 0;
+		padding-right: 0;
+	}*/
+	/* Bump up size of carousel content */
+	/*.carousel-caption p {
+		margin-bottom: 20px;
+		font-size: 21px;
+		line-height: 1.4;
+	}
+	.featurette-heading {
+		font-size: 50px;
+	}*/
+}
+
+/*@media (max-width: 767px) {
+	.carousel-caption h1 {
+		font-size: 30px;
+	}
+}
+*/
+@media (min-width:770px) and (max-width: 990px) {
+	.shield{
+		display:block;
+	}
+	.contact-name, .acct-name{
+		display:none;
+	}
+}

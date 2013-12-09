@@ -1,0 +1,19 @@
+#welcome-slider{
+	width:100%;
+	height:500px;
+	position:relative;
+	background-color:#000000;
+}
+#red-welcome{
+	background-color:#4D0202;
+	margin-top:-500px;
+}
+
+@media (max-width:767px){
+	#myCarousel{
+		display:none;
+	}
+	#red-welcome{
+		margin-top:0px;
+	}
+}
